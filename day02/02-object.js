@@ -39,11 +39,11 @@ let product = {
         };
         // let p = () => this.productId;
         // return p.bind(this)();
-        return p();
+        return p;
     }
 }
 
-console.log(product.productInfo());
+console.log(product.productInfo()());
 
 // Code diatas sebenarnya kita hanya membuat sebuah object dengan nama product,
 // bagaimana kalau kita ingin membuat object product yang lain, tinggal copy-paste ? bisa
@@ -175,7 +175,7 @@ console.log(food01.foodInfo());
 
 // Object method with arrow function
 // Arrow function tidak memiliki this
-console.log('Object Arrow Fn');
+// console.log('Object Arrow Fn');
 // const counter = {
 //     count: 0,
 //     next: () => ++this.count,
