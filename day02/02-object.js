@@ -79,6 +79,8 @@ const ProductMethod = {
 }
 
 function ProductObject(id, name) {
+    // Cara panjang
+    // let product = Object.create(Object.getPrototypeOf(ProductMethod));
     let product = Object.create(ProductMethod);
     product.productId = id;
     product.productName = name;
@@ -93,6 +95,7 @@ console.log(product02.productInfo());
 
 // Code diatas berjalan dengan baik, cuma agak kurang bagus, karena kita harus membuat object lain khusus untuk method
 // yang reusable
+// In JavaScript, every function and object has a property named prototype by default.
 // Untuk itu, javascript memiliki fitur prototype, yang sebenarnya hanya sebuah object kosong
 // Setiap fungsi dalam javascript, memiliki prototype
 // function doNothing(){}
